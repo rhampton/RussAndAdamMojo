@@ -14,6 +14,9 @@
 		89C664CF143B7A26005204B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C664CE143B7A26005204B3 /* main.m */; };
 		89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */; };
 		89C664D6143B7A26005204B3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C664D4143B7A26005204B3 /* MainWindow.xib */; };
+		89C664DF143B85EA005204B3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C664DD143B85EA005204B3 /* LoginViewController.m */; };
+		89C664E0143B85EA005204B3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C664DE143B85EA005204B3 /* LoginViewController.xib */; };
+		89C664E6143B8E33005204B3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C664E5143B8E33005204B3 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		89C664D1143B7A26005204B3 /* KemiAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KemiAppAppDelegate.h; sourceTree = "<group>"; };
 		89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KemiAppAppDelegate.m; sourceTree = "<group>"; };
 		89C664D5143B7A26005204B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		89C664DC143B85EA005204B3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		89C664DD143B85EA005204B3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		89C664DE143B85EA005204B3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		89C664E5143B8E33005204B3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,9 @@
 				89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */,
 				89C664D4143B7A26005204B3 /* MainWindow.xib */,
 				89C664C9143B7A26005204B3 /* Supporting Files */,
+				89C664DC143B85EA005204B3 /* LoginViewController.h */,
+				89C664DD143B85EA005204B3 /* LoginViewController.m */,
+				89C664DE143B85EA005204B3 /* LoginViewController.xib */,
 			);
 			path = KemiApp;
 			sourceTree = "<group>";
@@ -85,6 +95,7 @@
 		89C664C9143B7A26005204B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89C664E5143B8E33005204B3 /* logo.png */,
 				89C664CA143B7A26005204B3 /* KemiApp-Info.plist */,
 				89C664CB143B7A26005204B3 /* InfoPlist.strings */,
 				89C664CE143B7A26005204B3 /* main.m */,
@@ -142,6 +153,8 @@
 			files = (
 				89C664CD143B7A26005204B3 /* InfoPlist.strings in Resources */,
 				89C664D6143B7A26005204B3 /* MainWindow.xib in Resources */,
+				89C664E0143B85EA005204B3 /* LoginViewController.xib in Resources */,
+				89C664E6143B8E33005204B3 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +167,7 @@
 			files = (
 				89C664CF143B7A26005204B3 /* main.m in Sources */,
 				89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */,
+				89C664DF143B85EA005204B3 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

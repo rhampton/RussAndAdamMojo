@@ -11,10 +11,12 @@
 @implementation KemiAppAppDelegate
 
 @synthesize window = _window;
+@synthesize loginViewController = _loginViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Override point for customization after application launch.
+	[self.window setRootViewController:self.loginViewController];
 	[self.window makeKeyAndVisible];
     return YES;
 }
