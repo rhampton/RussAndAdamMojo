@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C664C3143B7A26005204B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C2143B7A26005204B3 /* UIKit.framework */; };
+		89C664C5143B7A26005204B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C4143B7A26005204B3 /* Foundation.framework */; };
+		89C664C7143B7A26005204B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C6143B7A26005204B3 /* CoreGraphics.framework */; };
+		89C664CD143B7A26005204B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C664CB143B7A26005204B3 /* InfoPlist.strings */; };
+		89C664CF143B7A26005204B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C664CE143B7A26005204B3 /* main.m */; };
+		89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */; };
+		89C664D6143B7A26005204B3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C664D4143B7A26005204B3 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89C664BE143B7A26005204B3 /* KemiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KemiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C664C2143B7A26005204B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89C664C4143B7A26005204B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89C664C6143B7A26005204B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89C664CA143B7A26005204B3 /* KemiApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KemiApp-Info.plist"; sourceTree = "<group>"; };
+		89C664CC143B7A26005204B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89C664CE143B7A26005204B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89C664D0143B7A26005204B3 /* KemiApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KemiApp-Prefix.pch"; sourceTree = "<group>"; };
+		89C664D1143B7A26005204B3 /* KemiAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KemiAppAppDelegate.h; sourceTree = "<group>"; };
+		89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KemiAppAppDelegate.m; sourceTree = "<group>"; };
+		89C664D5143B7A26005204B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C664BB143B7A26005204B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C664C3143B7A26005204B3 /* UIKit.framework in Frameworks */,
+				89C664C5143B7A26005204B3 /* Foundation.framework in Frameworks */,
+				89C664C7143B7A26005204B3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C664B3143B7A26005204B3 = {
+			isa = PBXGroup;
+			children = (
+				89C664C8143B7A26005204B3 /* KemiApp */,
+				89C664C1143B7A26005204B3 /* Frameworks */,
+				89C664BF143B7A26005204B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C664BF143B7A26005204B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C664BE143B7A26005204B3 /* KemiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C664C1143B7A26005204B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C664C2143B7A26005204B3 /* UIKit.framework */,
+				89C664C4143B7A26005204B3 /* Foundation.framework */,
+				89C664C6143B7A26005204B3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89C664C8143B7A26005204B3 /* KemiApp */ = {
+			isa = PBXGroup;
+			children = (
+				89C664D1143B7A26005204B3 /* KemiAppAppDelegate.h */,
+				89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */,
+				89C664D4143B7A26005204B3 /* MainWindow.xib */,
+				89C664C9143B7A26005204B3 /* Supporting Files */,
+			);
+			path = KemiApp;
+			sourceTree = "<group>";
+		};
+		89C664C9143B7A26005204B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C664CA143B7A26005204B3 /* KemiApp-Info.plist */,
+				89C664CB143B7A26005204B3 /* InfoPlist.strings */,
+				89C664CE143B7A26005204B3 /* main.m */,
+				89C664D0143B7A26005204B3 /* KemiApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89C664BD143B7A26005204B3 /* KemiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C664D9143B7A26005204B3 /* Build configuration list for PBXNativeTarget "KemiApp" */;
+			buildPhases = (
+				89C664BA143B7A26005204B3 /* Sources */,
+				89C664BB143B7A26005204B3 /* Frameworks */,
+				89C664BC143B7A26005204B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KemiApp;
+			productName = KemiApp;
+			productReference = 89C664BE143B7A26005204B3 /* KemiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C664B5143B7A26005204B3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 89C664B8143B7A26005204B3 /* Build configuration list for PBXProject "KemiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89C664B3143B7A26005204B3;
+			productRefGroup = 89C664BF143B7A26005204B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C664BD143B7A26005204B3 /* KemiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89C664BC143B7A26005204B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C664CD143B7A26005204B3 /* InfoPlist.strings in Resources */,
+				89C664D6143B7A26005204B3 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C664BA143B7A26005204B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C664CF143B7A26005204B3 /* main.m in Sources */,
+				89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89C664CB143B7A26005204B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C664CC143B7A26005204B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89C664D4143B7A26005204B3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C664D5143B7A26005204B3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89C664D7143B7A26005204B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89C664D8143B7A26005204B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89C664DA143B7A26005204B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KemiApp/KemiApp-Prefix.pch";
+				INFOPLIST_FILE = "KemiApp/KemiApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89C664DB143B7A26005204B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KemiApp/KemiApp-Prefix.pch";
+				INFOPLIST_FILE = "KemiApp/KemiApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C664B8143B7A26005204B3 /* Build configuration list for PBXProject "KemiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C664D7143B7A26005204B3 /* Debug */,
+				89C664D8143B7A26005204B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C664D9143B7A26005204B3 /* Build configuration list for PBXNativeTarget "KemiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C664DA143B7A26005204B3 /* Debug */,
+				89C664DB143B7A26005204B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C664B5143B7A26005204B3 /* Project object */;
+}
