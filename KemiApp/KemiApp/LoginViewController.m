@@ -10,42 +10,47 @@
 
 @implementation LoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize userName = userName_;
+@synthesize passWord = password_;
+@synthesize textFields = textFields_;
+
+
+- (void) viewDidLoad
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+	self.textFields = [NSArray arrayWithObjects:userName_, password_, nil];
+	[super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning
+- (void) viewDidUnload
 {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+	[self setUserName:nil];
+	[self setPassWord:nil];
+	[super viewDidUnload];
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
+- (IBAction)login:(id)sender
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	NSLog(@"Username: %@, Password: %@", self.userName.text, self.passWord.text);
 }
 
-- (void)viewDidUnload
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	int i = [textFields_ indexOfObject:textField];
+	if(i < [textFields_ count] - 1){
+		UITextField *nextTextField = [textFields_ objectAtIndex:i+1];
+		[nextTextField becomeFirstResponder];
+	}else{
+		[textField resignFirstResponder];
+	}
+	return TRUE;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void) dealloc
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	[userName_ release];
+	[password_ release];
+	[super dealloc];
 }
+
 
 @end
