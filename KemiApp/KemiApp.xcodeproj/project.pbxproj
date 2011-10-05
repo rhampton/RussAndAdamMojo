@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B3433B143BF02B007975AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B3433A143BF02B007975AE /* User.m */; };
 		89C664C3143B7A26005204B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C2143B7A26005204B3 /* UIKit.framework */; };
 		89C664C5143B7A26005204B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C4143B7A26005204B3 /* Foundation.framework */; };
 		89C664C7143B7A26005204B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C6143B7A26005204B3 /* CoreGraphics.framework */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48B34339143BF02B007975AE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		48B3433A143BF02B007975AE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		89C664BE143B7A26005204B3 /* KemiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KemiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C664C2143B7A26005204B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89C664C4143B7A26005204B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 				89C664DC143B85EA005204B3 /* LoginViewController.h */,
 				89C664DD143B85EA005204B3 /* LoginViewController.m */,
 				89C664DE143B85EA005204B3 /* LoginViewController.xib */,
+				48B34339143BF02B007975AE /* User.h */,
+				48B3433A143BF02B007975AE /* User.m */,
 			);
 			path = KemiApp;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				89C664CF143B7A26005204B3 /* main.m in Sources */,
 				89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */,
 				89C664DF143B85EA005204B3 /* LoginViewController.m in Sources */,
+				48B3433B143BF02B007975AE /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +283,7 @@
 				89C664DB143B7A26005204B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
