@@ -7,16 +7,27 @@
 //
 
 #import "KemiAppAppDelegate.h"
+#import "LoginViewController.h"
 
 @implementation KemiAppAppDelegate
 
 @synthesize window = _window;
-@synthesize loginViewController = _loginViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Override point for customization after application launch.
-	[self.window setRootViewController:self.loginViewController];
+	LoginViewController *loginViewController = [[LoginViewController alloc] init];
+	
+	UINavigationController *navController = [[UINavigationController alloc]
+											 initWithRootViewController:loginViewController];
+	
+	
+	
+	[loginViewController release];
+	
+	
+	[[self window] setRootViewController:navController];
+
 	[self.window makeKeyAndVisible];
     return YES;
 }

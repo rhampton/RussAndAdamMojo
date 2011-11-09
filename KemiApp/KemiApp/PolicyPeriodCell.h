@@ -1,0 +1,18 @@
+//
+//  PolicyPeriodCell.h
+//  KemiApp
+//
+//  Created by KEMI on 10/19/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface PolicyPeriodCell : UITableViewCell
+@property (retain, nonatomic) IBOutlet UILabel *policyPeriodTextLabel;
+
+
++ (NSString *)cellIdentifier;
++ (NSString *)nibName;
++ (CGFloat)height;
+@end

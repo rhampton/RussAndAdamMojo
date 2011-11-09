@@ -7,18 +7,81 @@
 //
 
 #import "LoginViewController.h"
+#import "PolicySearchViewController.h"
+#import "ASIHTTPRequest.h"
+#import "Request.h"
 
 @implementation LoginViewController
 
 @synthesize userName = userName_;
 @synthesize passWord = password_;
 @synthesize textFields = textFields_;
-@synthesize receivedData = receivedData_;
+
+ -(void)callFinished:(NSString*)response{
+     BOOL isAuthorized = false;
+ 
+     NSLog(@"I am logging too:%@", response);
+     
+     // TODO disable spinner at this point
+     
+     if([response rangeOfString:@"true"].location!=NSNotFound)
+         isAuthorized=true;
+     
+     if(isAuthorized)
+     {
+         NSLog(@"%@", @"Access Granted");
+         
+         PolicySearchViewController* psVC = [[[PolicySearchViewController alloc] init] autorelease];
+         
+         [[self navigationController] pushViewController:psVC animated:YES];
+         
+     }
+     else
+     {
+         NSLog(@"%@", @"Access Denied");
+         UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Invalid Login" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil] autorelease];
+         
+         [alert show];
+     }
+         
+ }
+ 
+ - (BOOL)validateUser:(NSString *)userName withPassword:(NSString *)password
+ {
+ if([userName length] == 0 || [password length] == 0)
+ return NO;
+ 
+ NSString* loginurl=@"http://tao2.kemi.com/wcfrussell/kemisvc.svc/json/logincheck/%@/%@";
+ 
+ NSString* location=[NSString stringWithFormat:loginurl, userName, password];
+ 
+ Request* r=[[Request alloc] init];
+ [r setDelegate:self];
+ [r openURLAsync:location];
+
+ return false;
+}
+
+-(void)requestFinishedTODODELETEME:(ASIHTTPRequest*)request{
+    NSString* response=[request responseString];
+    NSLog(@"Response %i: %@", request.responseStatusCode, response);
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+	[[self navigationController] setNavigationBarHidden:YES];
+	[[self userName] setText:@""];
+	[[self passWord] setText:@""];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[[self navigationItem] setTitle:@"Logout"];
+}
 
 - (void) viewDidLoad
 {
-	self.textFields = [NSArray arrayWithObjects:userName_, password_, nil];
-//    self.receivedData = [[NSMutableArray alloc] init];
+	[self setTextFields:[NSArray arrayWithObjects:userName_, password_, nil]];
 	[super viewDidLoad];
 }
 
@@ -26,53 +89,19 @@
 {
 	[self setUserName:nil];
 	[self setPassWord:nil];
-    [self setReceivedData:nil];
 	[super viewDidUnload];
 }
 
 - (IBAction)login:(id)sender
 {
-	NSLog(@"Username: %@, Password: %@", self.userName.text, self.passWord.text);
-    [LoginViewController test];
+	[self performLogin];
 }
 
-+ (void)test{
-    /*
-     // Construct a URL with the link string of the item
-     NSURL *url = [NSURL URLWithString:[entry link]];
-     // Construct a requst object with that URL
-     NSURLRequest *req = [NSURLRequest requestWithURL:url];
-     */
-    NSURL *url = [NSURL URLWithString:@"http://tao2.kemi.com/wcfrussell/kbi.svc?wsdl"];
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    NSLog(@"req is %@", req);
-    NSMutableArray *receivedData=[[NSMutableArray alloc] init];
-    
-    NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:req delegate:self];
-    if (theConnection) {
-        // Create the NSMutableData to hold the received data.
-        // receivedData is an instance variable declared elsewhere.
-        receivedData = [[NSMutableData data] retain];
-        [receivedData = [theConnection 
-        NSLog(@"--> %@",receivedData.count );
-    } else {
-        // Inform the user that the connection failed.
-        NSLog(@"Connection failed");
-    }
-    
-    [receivedData release];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+- (void)performLogin
 {
-    // This method is called when the server has determined that it
-    // has enough information to create the NSURLResponse.
-    
-    // It can be called multiple times, for example in the case of a
-    // redirect, so each time we reset the data.
-    
-    // receivedData is an instance variable declared elsewhere.
-    [receivedData_ setLength:0];
+    // TODO enable spinner
+    [self validateUser:[[self userName] text] withPassword:[[self passWord] text]];
+
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -83,15 +112,24 @@
 		[nextTextField becomeFirstResponder];
 	}else{
 		[textField resignFirstResponder];
+		[self performLogin];
 	}
 	return TRUE;
+}
+
+- (id)init
+{
+	self = [super init];
+	if(self){
+        // Do stuff
+	}
+	return self;
 }
 
 - (void) dealloc
 {
 	[userName_ release];
 	[password_ release];
-    [receivedData_ release];
 	[super dealloc];
 }
 

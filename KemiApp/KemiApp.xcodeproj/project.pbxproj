@@ -7,7 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48B3433B143BF02B007975AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B3433A143BF02B007975AE /* User.m */; };
+		480374D51467636200C8071D /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374C21467636200C8071D /* ASIAuthenticationDialog.m */; };
+		480374D61467636200C8071D /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374C51467636200C8071D /* ASIDataCompressor.m */; };
+		480374D71467636200C8071D /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374C71467636200C8071D /* ASIDataDecompressor.m */; };
+		480374D81467636200C8071D /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374C91467636200C8071D /* ASIDownloadCache.m */; };
+		480374D91467636200C8071D /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374CB1467636200C8071D /* ASIFormDataRequest.m */; };
+		480374DA1467636200C8071D /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374CD1467636200C8071D /* ASIHTTPRequest.m */; };
+		480374DB1467636200C8071D /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374D11467636200C8071D /* ASIInputStream.m */; };
+		480374DC1467636200C8071D /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374D31467636200C8071D /* ASINetworkQueue.m */; };
+		480374DF1467637C00C8071D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374DE1467637C00C8071D /* Reachability.m */; };
+		480374E1146768D200C8071D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480374E0146768D200C8071D /* CFNetwork.framework */; };
+		480374E3146768E700C8071D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480374E2146768E700C8071D /* SystemConfiguration.framework */; };
+		480374E5146768F800C8071D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480374E4146768F800C8071D /* MobileCoreServices.framework */; };
+		480374E81467695000C8071D /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 480374E61467692C00C8071D /* libz.1.2.5.dylib */; };
+		480374EB14678E2900C8071D /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 480374EA14678E2900C8071D /* Request.m */; };
+		89021912144F477800411194 /* PolicyPeriodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89021910144F477800411194 /* PolicyPeriodCell.m */; };
+		89021913144F477800411194 /* PolicyPeriodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89021911144F477800411194 /* PolicyPeriodCell.xib */; };
+		89021924144F6B7400411194 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89021922144F6B7400411194 /* AddressCell.m */; };
+		89021925144F6B7400411194 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89021923144F6B7400411194 /* AddressCell.xib */; };
+		89021929144F6B9C00411194 /* PhoneNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89021927144F6B9C00411194 /* PhoneNumberCell.m */; };
+		8902192A144F6B9C00411194 /* PhoneNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89021928144F6B9C00411194 /* PhoneNumberCell.xib */; };
+		8902192E144F6BAC00411194 /* PolicyNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8902192C144F6BAC00411194 /* PolicyNumberCell.m */; };
+		8902192F144F6BAC00411194 /* PolicyNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8902192D144F6BAC00411194 /* PolicyNumberCell.xib */; };
+		8908C099143CB5C500805CEC /* default_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8908C098143CB5C500805CEC /* default_button.png */; };
+		890EBCC21444AC32009616BE /* PolicySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890EBCC11444AC32009616BE /* PolicySearchViewController.m */; };
+		890EBCC41444AE2C009616BE /* PolicySearchHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EBCC31444AE2C009616BE /* PolicySearchHeader.xib */; };
+		890EBCC71444C452009616BE /* PolicySearchModel_Temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 890EBCC61444C452009616BE /* PolicySearchModel_Temp.m */; };
+		89383590144DE70B0049E4D2 /* login_group.png in Resources */ = {isa = PBXBuildFile; fileRef = 8938358F144DE70B0049E4D2 /* login_group.png */; };
+		898A466714507144004F69C9 /* PolicyDetailVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A466514507144004F69C9 /* PolicyDetailVIewController.m */; };
+		898A466814507144004F69C9 /* PolicyDetailVIewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898A466614507144004F69C9 /* PolicyDetailVIewController.xib */; };
+		898A467514507784004F69C9 /* PolicyHolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A467314507784004F69C9 /* PolicyHolderCell.m */; };
+		898A467614507784004F69C9 /* PolicyHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898A467414507784004F69C9 /* PolicyHolderCell.xib */; };
+		898A467914509276004F69C9 /* PolicyModel_Temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A467814509276004F69C9 /* PolicyModel_Temp.m */; };
 		89C664C3143B7A26005204B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C2143B7A26005204B3 /* UIKit.framework */; };
 		89C664C5143B7A26005204B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C4143B7A26005204B3 /* Foundation.framework */; };
 		89C664C7143B7A26005204B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C664C6143B7A26005204B3 /* CoreGraphics.framework */; };
@@ -21,8 +52,61 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48B34339143BF02B007975AE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		48B3433A143BF02B007975AE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		480374C11467636200C8071D /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		480374C21467636200C8071D /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		480374C31467636200C8071D /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		480374C41467636200C8071D /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		480374C51467636200C8071D /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		480374C61467636200C8071D /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		480374C71467636200C8071D /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		480374C81467636200C8071D /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		480374C91467636200C8071D /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		480374CA1467636200C8071D /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		480374CB1467636200C8071D /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		480374CC1467636200C8071D /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		480374CD1467636200C8071D /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		480374CE1467636200C8071D /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		480374CF1467636200C8071D /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		480374D01467636200C8071D /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		480374D11467636200C8071D /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		480374D21467636200C8071D /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		480374D31467636200C8071D /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		480374D41467636200C8071D /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		480374DD1467637C00C8071D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		480374DE1467637C00C8071D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		480374E0146768D200C8071D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		480374E2146768E700C8071D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		480374E4146768F800C8071D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		480374E61467692C00C8071D /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		480374E914678E2900C8071D /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		480374EA14678E2900C8071D /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		8902190F144F477800411194 /* PolicyPeriodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyPeriodCell.h; sourceTree = "<group>"; };
+		89021910144F477800411194 /* PolicyPeriodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyPeriodCell.m; sourceTree = "<group>"; };
+		89021911144F477800411194 /* PolicyPeriodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolicyPeriodCell.xib; sourceTree = "<group>"; };
+		89021921144F6B7400411194 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
+		89021922144F6B7400411194 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
+		89021923144F6B7400411194 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
+		89021926144F6B9C00411194 /* PhoneNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumberCell.h; sourceTree = "<group>"; };
+		89021927144F6B9C00411194 /* PhoneNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberCell.m; sourceTree = "<group>"; };
+		89021928144F6B9C00411194 /* PhoneNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneNumberCell.xib; sourceTree = "<group>"; };
+		8902192B144F6BAC00411194 /* PolicyNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyNumberCell.h; sourceTree = "<group>"; };
+		8902192C144F6BAC00411194 /* PolicyNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyNumberCell.m; sourceTree = "<group>"; };
+		8902192D144F6BAC00411194 /* PolicyNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolicyNumberCell.xib; sourceTree = "<group>"; };
+		8908C098143CB5C500805CEC /* default_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_button.png; sourceTree = "<group>"; };
+		890EBCC01444AC32009616BE /* PolicySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicySearchViewController.h; sourceTree = "<group>"; };
+		890EBCC11444AC32009616BE /* PolicySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicySearchViewController.m; sourceTree = "<group>"; };
+		890EBCC31444AE2C009616BE /* PolicySearchHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolicySearchHeader.xib; sourceTree = "<group>"; };
+		890EBCC51444C452009616BE /* PolicySearchModel_Temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicySearchModel_Temp.h; sourceTree = "<group>"; };
+		890EBCC61444C452009616BE /* PolicySearchModel_Temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicySearchModel_Temp.m; sourceTree = "<group>"; };
+		8938358F144DE70B0049E4D2 /* login_group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_group.png; sourceTree = "<group>"; };
+		898A466414507144004F69C9 /* PolicyDetailVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyDetailVIewController.h; sourceTree = "<group>"; };
+		898A466514507144004F69C9 /* PolicyDetailVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyDetailVIewController.m; sourceTree = "<group>"; };
+		898A466614507144004F69C9 /* PolicyDetailVIewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolicyDetailVIewController.xib; sourceTree = "<group>"; };
+		898A467214507784004F69C9 /* PolicyHolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyHolderCell.h; sourceTree = "<group>"; };
+		898A467314507784004F69C9 /* PolicyHolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyHolderCell.m; sourceTree = "<group>"; };
+		898A467414507784004F69C9 /* PolicyHolderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolicyHolderCell.xib; sourceTree = "<group>"; };
+		898A467714509276004F69C9 /* PolicyModel_Temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyModel_Temp.h; sourceTree = "<group>"; };
+		898A467814509276004F69C9 /* PolicyModel_Temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyModel_Temp.m; sourceTree = "<group>"; };
 		89C664BE143B7A26005204B3 /* KemiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KemiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C664C2143B7A26005204B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89C664C4143B7A26005204B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +129,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480374E81467695000C8071D /* libz.1.2.5.dylib in Frameworks */,
+				480374E5146768F800C8071D /* MobileCoreServices.framework in Frameworks */,
+				480374E3146768E700C8071D /* SystemConfiguration.framework in Frameworks */,
+				480374E1146768D200C8071D /* CFNetwork.framework in Frameworks */,
 				89C664C3143B7A26005204B3 /* UIKit.framework in Frameworks */,
 				89C664C5143B7A26005204B3 /* Foundation.framework in Frameworks */,
 				89C664C7143B7A26005204B3 /* CoreGraphics.framework in Frameworks */,
@@ -54,6 +142,154 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480374BF1467632300C8071D /* ASIHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				480374DD1467637C00C8071D /* Reachability.h */,
+				480374DE1467637C00C8071D /* Reachability.m */,
+				480374C11467636200C8071D /* ASIAuthenticationDialog.h */,
+				480374C21467636200C8071D /* ASIAuthenticationDialog.m */,
+				480374C31467636200C8071D /* ASICacheDelegate.h */,
+				480374C41467636200C8071D /* ASIDataCompressor.h */,
+				480374C51467636200C8071D /* ASIDataCompressor.m */,
+				480374C61467636200C8071D /* ASIDataDecompressor.h */,
+				480374C71467636200C8071D /* ASIDataDecompressor.m */,
+				480374C81467636200C8071D /* ASIDownloadCache.h */,
+				480374C91467636200C8071D /* ASIDownloadCache.m */,
+				480374CA1467636200C8071D /* ASIFormDataRequest.h */,
+				480374CB1467636200C8071D /* ASIFormDataRequest.m */,
+				480374CC1467636200C8071D /* ASIHTTPRequest.h */,
+				480374CD1467636200C8071D /* ASIHTTPRequest.m */,
+				480374CE1467636200C8071D /* ASIHTTPRequestConfig.h */,
+				480374CF1467636200C8071D /* ASIHTTPRequestDelegate.h */,
+				480374D01467636200C8071D /* ASIInputStream.h */,
+				480374D11467636200C8071D /* ASIInputStream.m */,
+				480374D21467636200C8071D /* ASINetworkQueue.h */,
+				480374D31467636200C8071D /* ASINetworkQueue.m */,
+				480374D41467636200C8071D /* ASIProgressDelegate.h */,
+			);
+			name = ASIHttpRequest;
+			sourceTree = "<group>";
+		};
+		89021915144F477C00411194 /* PolicyPeriodCell */ = {
+			isa = PBXGroup;
+			children = (
+				8902190F144F477800411194 /* PolicyPeriodCell.h */,
+				89021910144F477800411194 /* PolicyPeriodCell.m */,
+				89021911144F477800411194 /* PolicyPeriodCell.xib */,
+			);
+			name = PolicyPeriodCell;
+			sourceTree = "<group>";
+		};
+		89021916144F6A3500411194 /* PolicyNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				8902192B144F6BAC00411194 /* PolicyNumberCell.h */,
+				8902192C144F6BAC00411194 /* PolicyNumberCell.m */,
+				8902192D144F6BAC00411194 /* PolicyNumberCell.xib */,
+			);
+			name = PolicyNumberCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89021918144F6A3C00411194 /* PhoneNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				89021926144F6B9C00411194 /* PhoneNumberCell.h */,
+				89021927144F6B9C00411194 /* PhoneNumberCell.m */,
+				89021928144F6B9C00411194 /* PhoneNumberCell.xib */,
+			);
+			name = PhoneNumberCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89021919144F6A4200411194 /* AddressCell */ = {
+			isa = PBXGroup;
+			children = (
+				89021921144F6B7400411194 /* AddressCell.h */,
+				89021922144F6B7400411194 /* AddressCell.m */,
+				89021923144F6B7400411194 /* AddressCell.xib */,
+			);
+			name = AddressCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89021920144F6B3B00411194 /* Custom TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				89021919144F6A4200411194 /* AddressCell */,
+				89021918144F6A3C00411194 /* PhoneNumberCell */,
+				89021916144F6A3500411194 /* PolicyNumberCell */,
+				89021915144F477C00411194 /* PolicyPeriodCell */,
+				898A46711450776A004F69C9 /* PolicyHolderCell */,
+			);
+			name = "Custom TableViewCells";
+			sourceTree = "<group>";
+		};
+		8908C09E143CE9C000805CEC /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89C664DC143B85EA005204B3 /* LoginViewController.h */,
+				89C664DD143B85EA005204B3 /* LoginViewController.m */,
+				89C664DE143B85EA005204B3 /* LoginViewController.xib */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		8908C09F143CE9D500805CEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8938358F144DE70B0049E4D2 /* login_group.png */,
+				8908C098143CB5C500805CEC /* default_button.png */,
+				89C664E5143B8E33005204B3 /* logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		890EBCB914435E57009616BE /* PolicySearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				890EBCC01444AC32009616BE /* PolicySearchViewController.h */,
+				890EBCC11444AC32009616BE /* PolicySearchViewController.m */,
+				890EBCC31444AE2C009616BE /* PolicySearchHeader.xib */,
+			);
+			name = PolicySearchViewController;
+			sourceTree = "<group>";
+		};
+		895600711442796F003B2F56 /* Models_Temp */ = {
+			isa = PBXGroup;
+			children = (
+				890EBCC51444C452009616BE /* PolicySearchModel_Temp.h */,
+				890EBCC61444C452009616BE /* PolicySearchModel_Temp.m */,
+				898A467714509276004F69C9 /* PolicyModel_Temp.h */,
+				898A467814509276004F69C9 /* PolicyModel_Temp.m */,
+				480374E914678E2900C8071D /* Request.h */,
+				480374EA14678E2900C8071D /* Request.m */,
+			);
+			name = Models_Temp;
+			sourceTree = "<group>";
+		};
+		898A46711450776A004F69C9 /* PolicyHolderCell */ = {
+			isa = PBXGroup;
+			children = (
+				898A467214507784004F69C9 /* PolicyHolderCell.h */,
+				898A467314507784004F69C9 /* PolicyHolderCell.m */,
+				898A467414507784004F69C9 /* PolicyHolderCell.xib */,
+			);
+			name = PolicyHolderCell;
+			sourceTree = "<group>";
+		};
+		89AA3E18144889E8004BF8C3 /* PolicyDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				898A466414507144004F69C9 /* PolicyDetailVIewController.h */,
+				898A466514507144004F69C9 /* PolicyDetailVIewController.m */,
+				898A466614507144004F69C9 /* PolicyDetailVIewController.xib */,
+			);
+			name = PolicyDetailViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		89C664B3143B7A26005204B3 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +310,10 @@
 		89C664C1143B7A26005204B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480374E61467692C00C8071D /* libz.1.2.5.dylib */,
+				480374E4146768F800C8071D /* MobileCoreServices.framework */,
+				480374E2146768E700C8071D /* SystemConfiguration.framework */,
+				480374E0146768D200C8071D /* CFNetwork.framework */,
 				89C664C2143B7A26005204B3 /* UIKit.framework */,
 				89C664C4143B7A26005204B3 /* Foundation.framework */,
 				89C664C6143B7A26005204B3 /* CoreGraphics.framework */,
@@ -84,15 +324,17 @@
 		89C664C8143B7A26005204B3 /* KemiApp */ = {
 			isa = PBXGroup;
 			children = (
+				480374BF1467632300C8071D /* ASIHttpRequest */,
+				89021920144F6B3B00411194 /* Custom TableViewCells */,
+				89AA3E18144889E8004BF8C3 /* PolicyDetailViewController */,
+				890EBCB914435E57009616BE /* PolicySearchViewController */,
+				895600711442796F003B2F56 /* Models_Temp */,
+				8908C09F143CE9D500805CEC /* Images */,
 				89C664D1143B7A26005204B3 /* KemiAppAppDelegate.h */,
 				89C664D2143B7A26005204B3 /* KemiAppAppDelegate.m */,
 				89C664D4143B7A26005204B3 /* MainWindow.xib */,
 				89C664C9143B7A26005204B3 /* Supporting Files */,
-				89C664DC143B85EA005204B3 /* LoginViewController.h */,
-				89C664DD143B85EA005204B3 /* LoginViewController.m */,
-				89C664DE143B85EA005204B3 /* LoginViewController.xib */,
-				48B34339143BF02B007975AE /* User.h */,
-				48B3433A143BF02B007975AE /* User.m */,
+				8908C09E143CE9C000805CEC /* LoginViewController */,
 			);
 			path = KemiApp;
 			sourceTree = "<group>";
@@ -100,7 +342,6 @@
 		89C664C9143B7A26005204B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				89C664E5143B8E33005204B3 /* logo.png */,
 				89C664CA143B7A26005204B3 /* KemiApp-Info.plist */,
 				89C664CB143B7A26005204B3 /* InfoPlist.strings */,
 				89C664CE143B7A26005204B3 /* main.m */,
@@ -160,6 +401,15 @@
 				89C664D6143B7A26005204B3 /* MainWindow.xib in Resources */,
 				89C664E0143B85EA005204B3 /* LoginViewController.xib in Resources */,
 				89C664E6143B8E33005204B3 /* logo.png in Resources */,
+				8908C099143CB5C500805CEC /* default_button.png in Resources */,
+				890EBCC41444AE2C009616BE /* PolicySearchHeader.xib in Resources */,
+				89383590144DE70B0049E4D2 /* login_group.png in Resources */,
+				89021913144F477800411194 /* PolicyPeriodCell.xib in Resources */,
+				89021925144F6B7400411194 /* AddressCell.xib in Resources */,
+				8902192A144F6B9C00411194 /* PhoneNumberCell.xib in Resources */,
+				8902192F144F6BAC00411194 /* PolicyNumberCell.xib in Resources */,
+				898A466814507144004F69C9 /* PolicyDetailVIewController.xib in Resources */,
+				898A467614507784004F69C9 /* PolicyHolderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +423,25 @@
 				89C664CF143B7A26005204B3 /* main.m in Sources */,
 				89C664D3143B7A26005204B3 /* KemiAppAppDelegate.m in Sources */,
 				89C664DF143B85EA005204B3 /* LoginViewController.m in Sources */,
-				48B3433B143BF02B007975AE /* User.m in Sources */,
+				890EBCC21444AC32009616BE /* PolicySearchViewController.m in Sources */,
+				890EBCC71444C452009616BE /* PolicySearchModel_Temp.m in Sources */,
+				89021912144F477800411194 /* PolicyPeriodCell.m in Sources */,
+				89021924144F6B7400411194 /* AddressCell.m in Sources */,
+				89021929144F6B9C00411194 /* PhoneNumberCell.m in Sources */,
+				8902192E144F6BAC00411194 /* PolicyNumberCell.m in Sources */,
+				898A466714507144004F69C9 /* PolicyDetailVIewController.m in Sources */,
+				898A467514507784004F69C9 /* PolicyHolderCell.m in Sources */,
+				898A467914509276004F69C9 /* PolicyModel_Temp.m in Sources */,
+				480374D51467636200C8071D /* ASIAuthenticationDialog.m in Sources */,
+				480374D61467636200C8071D /* ASIDataCompressor.m in Sources */,
+				480374D71467636200C8071D /* ASIDataDecompressor.m in Sources */,
+				480374D81467636200C8071D /* ASIDownloadCache.m in Sources */,
+				480374D91467636200C8071D /* ASIFormDataRequest.m in Sources */,
+				480374DA1467636200C8071D /* ASIHTTPRequest.m in Sources */,
+				480374DB1467636200C8071D /* ASIInputStream.m in Sources */,
+				480374DC1467636200C8071D /* ASINetworkQueue.m in Sources */,
+				480374DF1467637C00C8071D /* Reachability.m in Sources */,
+				480374EB14678E2900C8071D /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
