@@ -13,11 +13,14 @@
 	UITextField *userName_;
 	UITextField *password_;
 	NSArray *textFields_;
+    NSMutableData *receivedData_;
 }
 @property (nonatomic, retain) IBOutlet UITextField *userName;
 @property (nonatomic, retain) IBOutlet UITextField *passWord;
 @property (retain) NSArray *textFields;
+@property (nonatomic, retain) NSMutableData *receivedData;
 
++ (void)test;
 - (IBAction)login:(id)sender;
 
 @end
