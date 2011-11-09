@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginModel_Temp.h"
 #import "Request.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate, WSCallComplete>
@@ -25,6 +24,3 @@
 - (void)performLogin;
 
 @end
-
-
-

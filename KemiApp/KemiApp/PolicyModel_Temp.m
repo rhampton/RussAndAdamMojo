@@ -15,7 +15,7 @@
 @synthesize policyNumber=policyNumber_;
 @synthesize policyEffDate=policyEffDate_;
 
-NSString* policyurl=@"https://tao2.kemi.com/wcfrussell/kemisvc.svc/json/policy/%@/%@";
+NSString* policyurl=@"http://tao2.kemi.com/wcfrussell/kemisvc.svc/json/policy/%@/%@";
 
 -(void)loadFromUrl{
     [self setPolicyNumber:@"311600"];

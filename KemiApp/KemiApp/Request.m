@@ -60,27 +60,4 @@
     [delegate callFinished:@"ERROR"];
 }
 
-/*
--(void)openURLAsync:(id)sender userName:(NSString*) username password:(NSString*) password{
-    NSString* location=[NSString stringWithFormat:loginurl, username, password];
-    NSURL* url=[NSURL URLWithString:location];
-    ASIHTTPRequest* request=[ASIHTTPRequest requestWithURL:url];
-    [request setValidatesSecureCertificate:FALSE];
-    [request addRequestHeader:@"Accept" value:@"application/json"];
-    [request setDelegate:self];
-    [request startAsynchronous];
-}
-
--(void)requestFinished:(ASIHTTPRequest*)request{
-    NSString* response=[request responseString];
-    NSLog(@"Response %i: %@", request.responseStatusCode, response);
-    x=1;
-}
-
--(void)requestFailed:(ASIHTTPRequest*)request{
-    NSError* error=[request error];
-    NSLog(@"Error: %@", error.localizedDescription);
-    x=2;
-}
-*/
 @end

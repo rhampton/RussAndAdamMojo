@@ -13,14 +13,12 @@
 
 @implementation PolicySearchViewController
 
-@synthesize loginModel = loginModel_;
 @synthesize policyPeriods = policyPeriods_;
-//@synthesize cell = cell_;
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
 	NSLog(@"Searching for Policy: %@", [searchBar text]);
-	NSMutableArray *ar = [PolicySearchModel_Temp searchPolicies:[searchBar text] loginModel:[self loginModel]];
+	NSMutableArray *ar = [PolicySearchModel_Temp searchPolicies:[searchBar text]];
 	if(ar){
 		[self setPolicyPeriods:ar];
 	}
@@ -36,17 +34,6 @@
 {
 	[searchBar resignFirstResponder];
 }
-
-/* TODO remove
-- (id)initWithLogin:(LoginModel_Temp *)loginModel
-{
-	self = [super init];
-	if(self){
-		[self setLoginModel:loginModel];
-	}
-	return self;
-}
-*/
 
 - (void)viewWillAppear:(BOOL)animated
 {

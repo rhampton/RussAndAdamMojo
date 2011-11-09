@@ -10,7 +10,7 @@
 
 @interface PolicySearchModel_Temp : NSObject
 
-+ (NSMutableArray *)searchPolicies:(NSString *)policyNumber loginModel:(LoginModel_Temp *)loginModel;
++ (NSMutableArray *)searchPolicies:(NSString *)policyNumber;
 
 @end
 

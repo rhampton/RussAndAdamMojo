@@ -62,11 +62,6 @@
  return false;
 }
 
--(void)requestFinishedTODODELETEME:(ASIHTTPRequest*)request{
-    NSString* response=[request responseString];
-    NSLog(@"Response %i: %@", request.responseStatusCode, response);
-}
-
 - (void) viewWillAppear:(BOOL)animated
 {
 	[[self navigationController] setNavigationBarHidden:YES];

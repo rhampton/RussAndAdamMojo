@@ -9,8 +9,6 @@
 #import "PolicySearchModel_Temp.h"
 #import "Request.h"
 
-
-
 @implementation PolicySearchModel_Temp (hidden)
 
 + (NSMutableArray *)getRandomDates:(int)numberOfdates
@@ -63,31 +61,25 @@
 
 @implementation PolicySearchModel_Temp
 
-NSString* getpolicyperiodsurl=@"https://tao2.kemi.com/wcfrussell/kemisvc.svc/json/getpolicyperiods/%@";
+NSString* getpolicyperiodsurl=@"http://tao2.kemi.com/wcfrussell/kemisvc.svc/json/getpolicyperiods/%@";
 
-+ (NSMutableArray *)searchPolicies:(NSString *)policyNumber loginModel:(LoginModel_Temp *)loginModel
++ (NSMutableArray *)searchPolicies:(NSString *)policyNumber
 {
-	if(loginModel){
-        NSString* requrl=[NSString stringWithFormat:getpolicyperiodsurl, policyNumber];
-        id resOrErr= [Request responseStringOrError:requrl];
-        NSLog(@"Object: %@", resOrErr);
+    NSString* requrl=[NSString stringWithFormat:getpolicyperiodsurl, policyNumber];
+    id resOrErr= [Request responseStringOrError:requrl];
+    NSLog(@"Object: %@", resOrErr);
+    
+    if(resOrErr!=nil){
+        // TODO parse JSON response into NSMutableArray
+        int numberOfPeriodsFound = rand() % 12;
         
-        if(resOrErr!=nil){
-            // TODO parse JSON response into NSMutableArray
-            int numberOfPeriodsFound = rand() % 12;
-			
-			NSLog(@"Policy %@ found! Returning %d dates", policyNumber, numberOfPeriodsFound);
-			
-			return [self getRandomDates:numberOfPeriodsFound];
-        }
+        NSLog(@"Policy %@ found! Returning %d dates", policyNumber, numberOfPeriodsFound);
         
-        NSLog(@"Policy not found");
-        return nil;
-        
-	}else{
-		NSLog(@"User not logged in");
-		return nil;
-	}
+        return [self getRandomDates:numberOfPeriodsFound];
+    }
+    
+    NSLog(@"Policy not found");
+    return nil;
 }
 
 
